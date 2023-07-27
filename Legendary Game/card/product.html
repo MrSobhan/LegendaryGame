@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/5.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>Product</title>
+    <style>
+      html{
+            scroll-behavior: smooth;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all .6s;
+            font-family: vazir;
+        }
+        body{
+            accent-color: rgb(166, 0, 255);
+            animation: start .6s;
+            overflow-x: hidden;
+        }
+        ::-webkit-scrollbar{
+            width: 13px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: rebeccapurple;
+            border-radius: 10px;
+        }
+        ::selection{
+            background-color: rgb(43, 198, 226);
+            color: rgb(0, 0, 0);
+        }
+        @font-face {
+            font-family: vazir;
+            src: url(../fonts/Vazir-Regular.woff) format('woff'),
+             url(../fonts/Vazir-Regular.ttf) format('ttf'),
+             url(../fonts/Vazir-Regular.woff2) format('woff2'),
+             url(../fonts/Vazir-Regular.eot);
+        }
+        @keyframes start{
+            0%{
+                transform: scale(.5);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+
+        /*------------------------------------------------------------------------*/
+      .container4{
+          position: relative;
+          width: 100%;
+          height: 45vh;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          justify-content:center ;
+          align-items: center;
+          padding: 30px;
+          overflow: hidden;
+          background-color: rgb(202, 202, 202);
+        }
+
+        .footer{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .footer li{
+          list-style: none;
+          font-size: 1rem;
+          line-height: 40px;
+        }
+
+        .img-footer{
+          width: 160px;
+          height: 140px;
+          
+        }
+        /*navbar*/
+
+        .nav{
+          position: relative;
+          width: 100%;
+          height: 60px;
+          background-color: #7ed6df;
+          display: flex;
+          justify-content: space-between ;
+          align-items: center;
+          box-shadow: 0 0 5px black;
+          padding: 10px;
+          z-index: 9999999999;
+          top: 0;
+        }
+        .nav img{
+          width: 70px;
+          height: 40px;
+        }
+
+        .nav div{
+          width: 500px;
+          display: flex;
+          justify-content: right ;
+          align-items: center;
+          font-size: 1rem;
+        }
+
+        .nav div li{
+          list-style: none;
+          padding: 5px;
+          color: black;
+        }
+        .nav div h1{
+          margin-right: 20px;
+        }
+
+
+        .nav div li:hover{
+          cursor: pointer;
+          background-color:#ff7979;
+          color:aliceblue;
+          border-radius: 5px;
+        }
+
+        .nav-home{
+          cursor: pointer;
+          background-color:#ff7979;
+          color:aliceblue !important;
+          border-radius: 5px;
+          margin-left: 20px;
+        }
+
+        .title-text{
+          text-align: center;
+          font-size: 26px;
+        }
+
+        /*Body-Web*/
+
+        .details {
+          position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 30px;
+        overflow: hidden;
+      }
+
+      .desc {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .desc h1 {
+        margin-bottom: 15px;
+      }
+
+      .desc p {
+          font-size: 20px;
+          line-height: 50px;
+      }
+
+      /* .text-div{
+        width: 90%;
+      } */
+
+      .div-img{
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+      }
+
+      .img-top-2{
+        width: 400px;
+        height: 300px;
+        border-radius: 10px;
+      }
+
+      .navbar {
+        width: 100%;
+        background-color: rgb(190, 190, 190);
+        padding: 40px;
+      }
+
+      /* .title-h1{
+        direction: ltr;
+      } */
+
+      /*btn-history*/
+
+      .btn-history{
+          width: 40px;
+          height: 40px;
+          background-color: #ff7979;
+          color: #ecedef;
+          border: none;
+          border-radius: 40px;
+          cursor: pointer;
+        }
+
+        .btn-history:hover{
+          box-shadow: 0 0 5px black;
+          width: 100px;
+        }
+
+        .btn-history::before{
+          content: '';
+          position: absolute;
+          margin-top: -7px;
+          margin-right: -9px;
+          width: 10px;
+          height: 10px;
+          border-right: 2px solid black;
+          border-top: 2px solid black;
+          border-left: none;
+          border-bottom: none;
+          transform: rotate(-135deg);
+        }
+
+        .h1elem::before{
+          content: '';
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: #7ed6df;
+          opacity: .6;
+          z-index: -1;
+        }
+
+        .pelem{
+          overflow: hidden;
+        }
+        .pelem::before{
+          content: '';
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          border:30px solid #7ed5dfc3;
+          opacity: .6;
+          z-index: -1;
+          margin-top: 5%;
+          left: -120px;
+        }
+
+        @media screen and (max-width:1100px){
+          .container4{
+            grid-template-columns: 1fr;
+            
+          }
+          /* .details{
+            grid-template-columns: 1fr;
+            
+          } */
+        }
+    </style>
+  </head>
+  <body dir="rtl">
+
+    <nav>
+      <div class="nav">
+        <div>
+          <img src="../images/8.png" alt="">
+        <h1>بازی های افسانه ای</h1>
+        </div>
+        <button class="btn-history" title="صفحه اصلی"></button>
+      </div>
+    </nav>
+
+    <div class="details"></div> 
+    
+    <footer>
+      <h1 class="title-text">درباره ما</h1>
+      <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C168.45,195.89 340.01,-34.03 508.74,97.21 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(202, 202, 202);"></path></svg></div>
+      <div class="container4"  id="particles-js">
+        
+        <center>
+          <div class="footer">
+            <b><li><i class="bi bi-person-circle"></i>  سبحان موسی زاده </li></b>
+            <li>مانی عاطفی</li>
+            <li>علی باغبانی</li>
+            <li>حسین جعفریان</li>
+            <li>امیر رضا جولانی</li>
+            <li>حسین شیرفکن</li>
+            <li>علی خسروی</li>
+            <li>محمد مجیدی</li>
+            <li>عرفان محمدیان</li>
+            <li>محمد مهدی محمدی</li>
+            <li>نیما نعمتی</li>
+          </div>
+        </center>
+        <div>
+          <center><img src="../images/5.png" alt="" class="img-footer"></center>
+        </div>
+      </div>
+      <center><h5 style="background-color: rgb(202, 202, 202);">Create By 2022   <i class="bi bi-c-circle"></i></h5></center>
+    </footer>
+    <!-- <div class="navbar">
+      <button>Back</button>
+    </div>-->
+
+    <script src="../js/product.js"></script>
+    <script src="../js/particles.js"></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

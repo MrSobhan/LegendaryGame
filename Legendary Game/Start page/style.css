@@ -1,0 +1,159 @@
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.underline:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  #e {
+    display: inline-block;
+    transform: rotate(-25deg);
+    position: relative;
+    left: -8.5px;
+  }
+  
+  .container {
+    margin-top: 200px;
+  }
+  
+ul{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+  
+  .nav {
+    position: fixed;
+    top: -10px;
+    right: 35px;
+    width: 250px;
+    height: 50px;
+  }
+
+  
+  .nav ul li {
+    font-size: 13px;
+    list-style: none;
+    padding: 0 15px;
+  }
+  
+  i {
+    cursor: pointer;
+  }
+  
+  
+  h1 span {
+    padding: 0;
+    margin: 0;
+    letter-spacing: -5px;
+    font-size: 2.5em;
+    -webkit-text-stroke: 2px;
+    cursor: pointer;
+  }
+  
+  .search {
+    width: 543.026px;
+    height: 37.9972px;
+    margin: 30px auto;
+  }
+  
+  .search input {
+    width: 525.043px;
+    height: 37.9972px;
+    padding: 0 5px;
+    font-size: 17px;
+  }
+  
+  #cad {
+    position: relative;
+    right: -120px;
+    top: -33px;
+    cursor: pointer;
+    color: #0266C8;
+    font-weight: bold;
+  }
+  
+  .fa-microphone {
+    position: relative;
+    top: -35px;
+    left: 240px;
+  }
+
+
+  
+  p:after {
+    color: blue;
+    content: " Français";
+    cursor: pointer;
+  }
+  
+  p:hover::after {
+    text-decoration: underline;
+  }
+  footer{
+    float: right;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  footer button{
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px black;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+  footer button:active{
+    transform: scale(.8);
+  }
+
+  .btn_serch{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+    transition: all .3s;
+    color: rgb(0, 0, 0);
+  }
+  .btn_serch:active{
+    transform: scale(.8);
+  }
+
+  .singin{
+    width: 100px;
+    height: 35px;
+    background-color: #0266C8;
+    font-size: 15px;
+    color: #ffffff;
+    transition: all .2s;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .singin:hover{
+    box-shadow: 0 0 3px rgb(80, 79, 79);
+  }
+
+  .input4:hover{
+    box-shadow: 0 0 5px black;
+  }
+
+  .input4{
+    border: none;
+    box-shadow: 0 0 2px black;
+  }
