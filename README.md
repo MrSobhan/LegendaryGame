@@ -14,3 +14,12 @@ Legendary Game is a tribute to the games that left an indelible mark on the indu
 - **Teaching and guidance of games**
 - **action stories**
 - **very beautiful and responsive design**:
+
+
+## <img src="https://github.com/Tarikul-Islam-Anik/tarikul-islam-anik/raw/main/assets/images/Globe%20with%20Meridians.png" alt="Slightly Smiling Face" width="25" height="25"/> Support Me
+<div>
+  <a href="https://t.me/soobhhan">
+      You don't want to follow me !?
+  </a>
+
+</div>
